@@ -24,12 +24,12 @@ Technical questions:
 
 3. Why did you choose the language/framework/libraries you did to create the application? What was the most useful feature of the language selected? <br/>
    A. I chose the following software infrastructure: <br/>
-   O. language: Javascript.<br/>
-   i. Frontend: React.<br/>
-   i.a. UI component framework: Material UI <br/>
-   ii. Frontend state management: Redux.<br/>
-   iii. API server: Node, especifically Express.<br/>
-   iv. Data base: MongoDB <br/>
-   v. File storage: AWS S3 bucket. <br/>
-   vi. User authentificatiuon and session tracking system: passport, specifically the Google strategy.<br/>
+      O. language: Javascript.<br/>
+      i. Frontend: React.<br/>
+            i.a. UI component framework: Material UI <br/>
+      ii. Frontend state management: Redux.<br/>
+      iii. API server: Node, especifically Express.<br/>
+      iv. Data base: MongoDB <br/>
+      v. File storage: AWS S3 bucket. <br/>
+      vi. User authentificatiuon and session tracking system: passport, specifically the Google strategy.<br/>
    And the reason for choosing this infrasctructure was familiarity with the frameworks and libraries. And the feature that was the most useful of using Javascript is that I was able to write the entire front end and back end with just one language, instead of using multiple languages for both front end and back end.
