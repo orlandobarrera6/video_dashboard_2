@@ -78,9 +78,7 @@ class EditVideo extends React.Component {
 	};
 
 	onTagsChange = (event, value) => {
-		this.setState({ tags: value }, () => {
-			console.log(this.state.tags);
-		});
+		this.setState({ tags: value });
 	};
 
 	render() {
