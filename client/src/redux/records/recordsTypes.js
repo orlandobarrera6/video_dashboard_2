@@ -1,0 +1,9 @@
+const RecordsActionTypes = {
+	FETCH_RECORDS: 'FETCH_RECORDS',
+	GET_RECORDS: 'GET_RECORDS',
+	SET_RECORDS: 'SET_RECORDS',
+	CURRENT_RECORD: 'CURRENT_RECORD',
+	CLEAR_RECORDS: 'CLEAR_RECORDS',
+};
+
+export default RecordsActionTypes;
