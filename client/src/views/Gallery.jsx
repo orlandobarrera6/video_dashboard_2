@@ -25,7 +25,7 @@ class Gallery extends React.Component {
 
 	render() {
 		const { response } = this.state;
-		return <h1>{response.express}</h1>;
+		return <h1>Did not have enough time to implement the Gallery view.</h1>;
 	}
 }
 
