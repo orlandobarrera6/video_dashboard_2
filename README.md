@@ -17,7 +17,7 @@ To see the project live:
 Technical questions:
 
 1. What would you add to your solution if you had more time? <br />
-   A. I would have finished the Gallery view in the project, created a modal for video streaming, would have added asychronous pagination in the backend, as well as write more tests. <br />
+   A. I would have finished the Gallery view in the project, created a modal for video streaming, would have added asychronous pagination in the backend, as well as write tests. <br />
 
 2. How would you track down a performance issue in production with the application you created? <br/>
    A. I would have to create a robust backend logging system that records all HTTP requests being done to the API, and using the logs from the logging system see what calls or context was present at the moment of the performance issue.<br/>
