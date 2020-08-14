@@ -10,7 +10,7 @@ const Welcome = ({ history, user }) => {
 
 			<h2>
 				- Go to "Manage Recordings" to upload, download, edit or delete your
-				video files in the file our system.
+				video files in the file system.
 			</h2>
 		</div>
 	);
