@@ -3,7 +3,7 @@
 To see the project live:
 1. Clear any servers from localhost:3000 and localhost:5000
 2. Clone the repo in your localhost with HTTPS 
-3. Once the project is downloaded in your local environment:
+3. Once the project is downloaded in your local environment: <br />
     3.a. Open the command line. <br />
     3.b. Navigate to the project directory "/video_dashboard" and inside run the command: "sudo npm install". <br />
     3.c. Now go into the client directory "/video_dashboard/client" and again inside run the command: "sudo npm install". <br />
