@@ -172,7 +172,6 @@ class ManageContent extends React.Component {
 		const { classes } = this.props;
 
 		const options = {
-			serverSide: true,
 			download: false,
 			filter: true,
 			print: false,
