@@ -6,7 +6,7 @@ const Welcome = ({ history, user }) => {
 	return (
 		<div>
 			<h1>Welcome back {user.firstName}!</h1>
-			<h2>- Go to Gallery to get view your most 9 most recent recordings.</h2>
+			<h2>- Go to Gallery to view your 9 most recent recordings.</h2>
 
 			<h2>
 				- Go to "Manage Recordings" to upload, download, edit or delete your
