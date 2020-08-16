@@ -11,12 +11,19 @@ import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
+import Backdrop from '@material-ui/core/Backdrop';
+import CircularProgress from '@material-ui/core/CircularProgress';
+
 import axios from 'axios';
 
 import { fetchRecords } from '../redux/records/recordsActions';
 
 const styles = (theme) =>
 	createStyles({
+		backdrop: {
+			zIndex: theme.zIndex.drawer + 1,
+			color: '#fff',
+		},
 		root: {
 			width: '70vw',
 		},
@@ -43,6 +50,7 @@ class AddVideo extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			backdrop: false,
 			title: '',
 			description: '',
 			tags: [],
@@ -69,6 +77,8 @@ class AddVideo extends React.Component {
 			const { title, description, file, tags } = this.state;
 			alert(`Uploading file named:${this.state.title}, might take sometime.`);
 
+			this.handleBackdrop();
+
 			const { data } = await axios.post('/api/records/upload', {
 				fileType: this.state.file.type,
 			});
@@ -83,6 +93,8 @@ class AddVideo extends React.Component {
 
 			await this.props.fetchRecords();
 
+			this.handleBackdrop();
+
 			this.setState({ title: '', description: '', tags: [] });
 		} catch (error) {
 			console.log(error);
@@ -93,10 +105,18 @@ class AddVideo extends React.Component {
 		this.setState({ tags: value });
 	};
 
+	handleBackdrop = () => {
+		this.setState({ backdrop: !this.state.backdrop });
+	};
+
 	render() {
 		const { classes } = this.props;
 		return (
 			<div className={classes.root}>
+				<Backdrop className={classes.backdrop} open={this.state.backdrop}>
+					<CircularProgress color='inherit' />
+				</Backdrop>
+
 				<Paper className={classes.paper} elevation={3}>
 					<div className={classes.formEntry}>
 						<h1>Add new video</h1>
