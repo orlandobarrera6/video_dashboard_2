@@ -32,4 +32,4 @@ Technical questions:
       iv. Data base: MongoDB <br/>
       v. File storage: AWS S3 bucket. <br/>
       vi. User authentificatiuon and session tracking system: passport, specifically the Google strategy.<br/>
-   And the reason for choosing this infrasctructure was familiarity with the frameworks and libraries. And the feature that was the most useful of Javascript is that I was able to write the entire front end and back end with just one language, instead of using multiple languages for both front end and back end.
+   And the reason for choosing this infrasctructure was familiarity with the frameworks and libraries. And the feature that was the most useful of Javascript is that I was able to write the entire frontend and backend with just one language, instead of using two or more languages for both frontend and backend.
