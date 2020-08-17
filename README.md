@@ -20,7 +20,7 @@ Technical questions:
    A. I would have finished the Gallery view in the project, created a modal for video streaming, would have added asychronous pagination in the backend, as well as write tests. <br />
 
 2. How would you track down a performance issue in production with the application you created? <br/>
-   A. I would have to create a robust backend logging system that records all HTTP requests being done to the API, and using the logs from the logging system see what calls or context was present at the moment of the performance issue.<br/>
+   A. I would have to create a robust backend logging system that records all HTTP requests being done to the backend, and using the logs from the logging system see what calls or context was present at the moment of the performance issue.<br/>
 
 3. Why did you choose the language/framework/libraries you did to create the application? What was the most useful feature of the language selected? <br/>
    A. I chose the following software infrastructure: <br/>
