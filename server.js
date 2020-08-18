@@ -38,7 +38,8 @@ const app = express();
 // body and assign it to the req.body of the incoming
 // request's object.
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.urlencoded({ extended: true }));
+
 // Enabling express to use cookies with a max amount
 // of time it can be valid for and a security key.
 app.use(
@@ -47,14 +48,6 @@ app.use(
 		keys: [keys.cookieKey],
 	})
 );
-
-// app.use(async (req, res, next) => {
-// 	try {
-// 		await next();
-// 	} catch (error) {
-// 		res.status(500).json(error);
-// 	}
-// });
 
 // Now I tell passport to use cookies to handle
 // authentication
@@ -70,7 +63,6 @@ const port = process.env.PORT || 5000;
 
 // Dummy API route handlers to test front-end/backend
 // connection.
-
 app.get('/api/hello', (req, res) => {
 	res.send({ express: 'Hello From Express' });
 });

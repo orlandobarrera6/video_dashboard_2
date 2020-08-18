@@ -22,6 +22,10 @@ const keys = require('../config/keys');
 // where are the oauth requests coming from and so we need to register
 // our project with google. You need to create a project for this:
 // http://console.developer.google.com/
+
+// Every time the user comes back to our application from the google oath flow
+// we check to see if the user exists in the DB using the mongoose query findOne
+// and if it doesn't we create a new  user in the database.
 passport.use(
 	new GoogleStrategy(
 		{
@@ -45,6 +49,8 @@ passport.use(
 					picture: profile.photos[0].value,
 				}).save();
 
+				// whenever we use done we tell passport we are done, we have made the user and
+				// this is the user.
 				done(null, user);
 			} catch (error) {
 				console.log(error);
@@ -55,6 +61,9 @@ passport.use(
 
 // Declaring some functions that will allow us to tell
 // passport to keep track of our user session via cookies
+
+// Any following HTTP requests will have the cookie which
+// will allow the sever to authenticate the request for that user
 
 // Getting cookie
 passport.serializeUser((user, done) => {
