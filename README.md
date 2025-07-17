@@ -14,22 +14,3 @@ To see the project live:
 7. On your web browser type: localhost:3000 and click enter.
 8. Sign in with google! Looking forward to seeing your activity on the cloud :)
 
-Technical questions:
-
-1. What would you add to your solution if you had more time? <br />
-   A. I would have finished the Gallery view in the project, created a modal for video streaming, would have added asychronous pagination in the backend, as well as write tests. <br />
-
-2. How would you track down a performance issue in production with the application you created? <br/>
-   A. I would have to create a robust backend logging system that records all HTTP requests being done to the backend, and using the logs from the logging system see what calls or context was present at the moment of the performance issue.<br/>
-
-3. Why did you choose the language/framework/libraries you did to create the application? What was the most useful feature of the language selected? <br/>
-   A. I chose the following software infrastructure: <br/>
-      O. language: Javascript.<br/>
-      i. Frontend: React.<br/>
-            i.a. UI component framework: Material UI <br/>
-      ii. Frontend state management: Redux.<br/>
-      iii. API server: Node, especifically Express.<br/>
-      iv. Data base: MongoDB <br/>
-      v. File storage: AWS S3 bucket. <br/>
-      vi. User authentificatiuon and session tracking system: passport, specifically the Google strategy.<br/>
-   And the reason for choosing this infrasctructure was familiarity with the frameworks and libraries. And the feature that was the most useful of Javascript is that I was able to write the entire frontend and backend with just one language, instead of using two or more languages for both frontend and backend.
